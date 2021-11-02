@@ -11,19 +11,38 @@
     </head>
     <body>
         <form action="" method="post">
-            <br>Enter Name</br>
-            <input type="text" name="name" required>
-            <br>Enter Email</br>
-            <input type="text" name="email" required>
-            <br>Enter Phone Number</br>
-            <input type="text" name="phone" required>
-            <br>Enter Service Type</br>
-            <input type="text" name="service">
-            <br>Enter Address</br>
-            <textarea name="address" id="" cols="50" rows="5"></textarea>
-            <br>Enter any comments/queries</br>
-            <textarea name="queries" id="" cols="50" rows="3"></textarea>
-            <p><input type="submit" name="submit" value="Enter"></p>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Enter Your Full Name</label>
+                <input type="name" class="form-control" name="name" id="exampleFormControlInput1" placeholder="FirstName LastName ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Enter Your Email address</label>
+                <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Enter Phone Number</label>
+                <input type="phone" class="form-control" name="phone" id="exampleFormControlInput1" placeholder="(00)0123456789">
+            </div>
+            <label for="exampleDataList" class="form-label">Select your service</label>
+            <input class="form-control" list="datalistOptions" name="service" id="exampleDataList" placeholder="Select Your Service Type">
+            <datalist id="datalistOptions">
+                <option value="Web Development">
+                <option value="Mobile Development">
+                <option value="Digital Marketing">
+                <option value="Analytics">
+                <option value="Graphic Designing">
+            </datalist>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Enter Address</label>
+                <textarea class="form-control" name="address" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Enter any comments/queries</label>
+                <textarea class="form-control" name="queries" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Submit</button>
+            </div>
         </form>
     </body>
 </html>
